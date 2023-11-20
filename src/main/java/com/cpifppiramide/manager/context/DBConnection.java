@@ -14,8 +14,8 @@ public class DBConnection {
         if(connection == null) {
             try {
                 connection = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/manager",
-                        "root", "root");
+                        "jdbc:mysql://database-1.cabn5upwsapr.us-east-1.rds.amazonaws.com/gestionEquipo",
+                        "admin", "admin1234");
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }

@@ -11,6 +11,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+//select en.*, ej.id as ejercicio_id, ej.titulo
+//from entrenamientos en
+//left join entrenamientos_ejercicios ee on ee.id_entrenamiento = en.id
+//left join ejercicios ej on ej.id = ee.id_ejercicio
 
 public class EntrenamientosRepositoryMySQL implements EntrenamientosRepository {
     @Override
